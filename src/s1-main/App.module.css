@@ -1,6 +1,6 @@
 .App {
     --header_height: 60px;
-    padding: 131px 70px 10px 70px;
+    padding: 131px 70px 100px 70px;
 
 
     color: #000;
@@ -9,7 +9,14 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
+
+
+
 
 .hw {
 
