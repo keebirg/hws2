@@ -9,6 +9,9 @@
 }
 
 .label {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 19px;
 }
 
 .options {
