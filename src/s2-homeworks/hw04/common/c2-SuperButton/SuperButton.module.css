@@ -12,6 +12,10 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+
+    cursor: pointer;
+
+    transition: 0.5s;
 }
 
 .disabled {
@@ -19,6 +23,7 @@
     color: #002E5C;
 
     opacity: 0.5;
+
 
 }
 
@@ -30,9 +35,11 @@
     border: 1px solid #06C;
 
     background-color: #FFFFFF;
+
 }
 
 .default {
+
 }
 
 .red {
@@ -51,6 +58,8 @@
 
 .secondary:hover {
     width: 167px;
+
+
 }
 
 
@@ -60,10 +69,12 @@
 
 .secondary:active {
     width: 149px;
+
 }
 
 .red:active {
     width: 149px;
+
 }
 
 .button:disabled {
