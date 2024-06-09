@@ -11,4 +11,13 @@
 }
 
 .more {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+
+    color: #00000080;
+    opacity: 50%;
+
+    margin: 8px 0 27px;
+
 }
