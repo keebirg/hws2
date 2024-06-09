@@ -48,11 +48,13 @@ function Clock() {
 
 
     formatter = new Intl.DateTimeFormat("en", {
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
+        year: "2-digit",
+        month: "2-digit",
+        day: "2-digit",
     });
-    const stringDate = formatter.format(date) || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+    const [{ value: month }, , { value: day }, , { value: year }] = formatter.formatToParts(date);
+    const formattedDate = `${month}.${day}.${year}`;
+    const stringDate = formattedDate || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     formatter = new Intl.DateTimeFormat("en", {
