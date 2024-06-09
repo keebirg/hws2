@@ -48,7 +48,7 @@ function Clock() {
 
 
     formatter = new Intl.DateTimeFormat("en", {
-        year: "2-digit",
+        year: "numeric",
         month: "2-digit",
         day: "2-digit",
     });
