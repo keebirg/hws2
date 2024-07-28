@@ -15,8 +15,8 @@ import {AppStoreType} from "../hw10/bll/store";
 
 const themes = [
     {id: 1, value: 'light'},
-    {id: 2, value: 'blue'},
-    {id: 3, value: 'dark'},
+    {id: 5, value: 'blue'},
+    {id: 6, value: 'dark'},
 ]
 
 
