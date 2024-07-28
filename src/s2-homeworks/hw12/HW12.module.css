@@ -19,5 +19,11 @@ html {
 }
 
 .select {
+    width: 171px;
+    height: 36px;
+
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
 
 }
