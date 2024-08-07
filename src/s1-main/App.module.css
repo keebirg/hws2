@@ -18,12 +18,16 @@
 
 
 .hw {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
 .hwTitle {
     position: relative;
     margin-bottom: 34px;
+    margin-top: 34px;
 }
 
 .hwTitle:before{
