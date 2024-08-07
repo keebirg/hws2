@@ -17,6 +17,8 @@
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
 }
 
 .code {
