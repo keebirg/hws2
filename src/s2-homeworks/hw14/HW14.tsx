@@ -34,11 +34,13 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
+                if (res) setTechs(res.data.techs)
                 // делает студент
-
                 // сохранить пришедшие данные
-
                 //
+            })
+            .finally(()=>{
+                setLoading(false)
             })
     }
 
@@ -49,7 +51,8 @@ const HW14 = () => {
         // добавить/заменить значение в квери урла
         // setSearchParams(
 
-        //
+        setSearchParams(value)
+
     }
 
     useEffect(() => {
@@ -79,8 +82,9 @@ const HW14 = () => {
                 <div id={'hw14-loading'} className={s.loading}>
                     {isLoading ? '...ищем' : <br/>}
                 </div>
-
-                {mappedTechs}
+                <div className={s.techs}>
+                    {mappedTechs}
+                </div>
             </div>
         </div>
     )
